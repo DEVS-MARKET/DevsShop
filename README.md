@@ -4,6 +4,7 @@
 - Minecraft
 
 ### Features
+- [x] User-friendly installation
 - [ ] User permissions
 - [ ] User roles
 - [ ] Variants
@@ -13,3 +14,6 @@
 - [ ] Multi-currency
 - [ ] Multi-server
 - [ ] Multi payment gateways (PayPal, Stripe, ZEN.com, etc)
+
+
+Created by @Hyd3r1 and @DevsMarket
