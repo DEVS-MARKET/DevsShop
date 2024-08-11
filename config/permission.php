@@ -150,7 +150,7 @@ return [
      * See documentation to understand supported syntax.
      */
 
-    'enable_wildcard_permission' => false,
+    'enable_wildcard_permission' => true,
 
     /*
      * The class to use for interpreting wildcard permissions.
@@ -173,7 +173,7 @@ return [
          * The cache key used to store all permissions.
          */
 
-        'key' => 'spatie.permission.cache',
+        'key' => 'devsmarket.permissions.cache',
 
         /*
          * You may optionally indicate a specific cache driver to use for permission and
