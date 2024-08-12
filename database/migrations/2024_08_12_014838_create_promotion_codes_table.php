@@ -16,7 +16,6 @@ return new class extends Migration
             $table->string('code')->unique();
             $table->unsignedBigInteger('product_id')->nullable();
             $table->unsignedBigInteger('server_id')->nullable();
-            $table->unsignedBigInteger('category_id')->nullable();
             $table->unsignedBigInteger('user_id');
             $table->unsignedBigInteger('limit')->nullable();
             $table->unsignedBigInteger('times_used')->default(0);

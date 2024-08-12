@@ -59,6 +59,7 @@ class EnviromentController extends Controller
             '--seed' => true,
             '--force' => true,
         ]);
+        Artisan::call('storage:link');
         $output = Artisan::output();
         modifyEnv('APP_DEBUG', false);
         modifyEnv('APP_ENV', 'production');

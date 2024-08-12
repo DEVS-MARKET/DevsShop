@@ -3,5 +3,31 @@
     "Name": "Name",
     "Password": "Password",
     "Sign in": "Sign in",
-    "Remember me": "Remember me"
+    "Remember me": "Remember me",
+
+    "All servers": "All servers",
+    "Servers": "Servers",
+    "Add server": "Add server",
+    "Edit server": "Edit server",
+    "Delete server": "Delete server",
+    "Server name": "Server name",
+    "Server address": "Server address",
+    "Image": "Image",
+    "Actions": "Actions",
+
+    "Dashboard": "Dashboard",
+
+
+    ":resource was successfully created.": ":resource was successfully created.",
+    ":resource was successfully updated.": ":resource was successfully updated.",
+    "Edit :resource": "Edit :resource",
+    "Create :resource": "Create :resource",
+    ":service is working": ":service is working",
+    ":service is not working": ":service is not working",
+
+    "The installation has been completed successfully. You can now login to your account.": "The installation has been completed successfully. You can now login to your account.",
+    "Installation completed": "Installation completed",
+
+    "Close": "Close",
+    "Save": "Save"
 }

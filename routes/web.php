@@ -9,5 +9,7 @@ Route::get('/', function () {
 require_once __DIR__ . '/installer.php';
 
 Route::middleware(CheckInstallationStatus::class)->group(function () {
-    require_once __DIR__ . '/admin.php';
+    Route::prefix('/admin')->group(function () {
+        require_once __DIR__ . '/admin.php';
+    });
 });

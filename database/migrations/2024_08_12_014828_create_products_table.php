@@ -23,6 +23,7 @@ return new class extends Migration
                 'paysafecard' => null,
                 'direct_billing' => null,
             ]));
+            $table->unsignedBigInteger('server_id');
             $table->string('commands')->nullable();
             $table->string('image')->default('no-image.png');
             $table->boolean('active')->default(true);
