@@ -15,9 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('code')->unique();
             $table->unsignedBigInteger('product_id');
-            $table->foreign('product_id')->references('id')->on('products')->onDelete('cascade');
             $table->unsignedBigInteger('user_id');
-            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
             $table->timestamp('redeemed_at')->nullable();
             $table->timestamp('expires_at')->nullable();
             $table->boolean('active')->default(true);

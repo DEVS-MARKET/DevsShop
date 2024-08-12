@@ -15,7 +15,14 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('description')->nullable();
-            $table->decimal('price', 8, 2);
+            $table->json('price')->default(json_encode([
+                'zen' => null,
+                'paypal' => null,
+                'stripe' => null,
+                'transfer' => null,
+                'paysafecard' => null,
+                'direct_billing' => null,
+            ]));
             $table->string('commands')->nullable();
             $table->string('image')->default('no-image.png');
             $table->boolean('active')->default(true);
