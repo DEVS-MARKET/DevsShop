@@ -9,7 +9,6 @@
         "laravel/framework": "^11.9",
         "laravel/sanctum": "^4.0",
         "laravel/tinker": "^2.9",
-        "obanach/zen-php-sdk": "^1.0",
         "patryqhyper/polish_payments_api": "^3.0",
         "spatie/laravel-permission": "^6.9"
     },

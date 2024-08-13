@@ -1,5 +1,8 @@
 <?php
 
+use App\Models\Setting;
+use Illuminate\Support\Facades\Cache;
+
 if (!function_exists('modifyEnv')) {
     function modifyEnv($envKey, $envValue): void
     {
@@ -16,5 +19,19 @@ if (!function_exists('modifyEnv')) {
         $fp = fopen($envFile, 'w');
         fwrite($fp, $str);
         fclose($fp);
+    }
+}
+
+if (!function_exists('settings')) {
+    function settings($key)
+    {
+        return Cache::get('settings.' . $key, function () use ($key) {
+            $setting = Setting::where('key', $key)->first();
+            if ($setting) {
+                Cache::put('settings.' . $key, $setting->value, now()->addDay());
+                return $setting->value;
+            }
+            return null;
+        });
     }
 }

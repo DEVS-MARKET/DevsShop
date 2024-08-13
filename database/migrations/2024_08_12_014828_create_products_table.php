@@ -16,7 +16,6 @@ return new class extends Migration
             $table->string('name');
             $table->string('description')->nullable();
             $table->json('price')->default(json_encode([
-                'zen' => null,
                 'paypal' => null,
                 'stripe' => null,
                 'transfer' => null,
